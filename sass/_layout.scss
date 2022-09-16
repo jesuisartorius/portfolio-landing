@@ -1,0 +1,64 @@
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: .8rem 0;
+    cursor: pointer;
+    max-width: 22rem;
+    width: 100%;
+    font-family: inherit;
+    font-weight: 400;
+    border-radius: 0;
+    border: 2px solid #BDAE82;;
+    font-size: 2rem;
+    line-height: 1.6;
+    color: #BDAE82;
+    background-color: #000;
+    
+}
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 2rem;
+    display: none;
+
+    @include respond(tab-port) {
+        display: block;
+        z-index: 2;
+    }
+}
+.icon-mobile-nav {
+    height: 5rem;
+    width: 5rem;
+    color: #fff;
+}
+
+.icon-mobile-nav[name = "close-outline"] {
+    display: none;
+}
+
+
+.gallery {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+
+    @include respond(tab-port) {
+       grid-template-columns: 1fr;
+       justify-items: center;
+} 
+}
+
+
+
